@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube In-Video Logo Remover</title>
+
+    <style>
+        body {
+            width: 260px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 13px;
+            opacity: 0.85;
+            line-height: 1.4;
+        }
+
+        .switch-container {
+            margin-top: 18px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 32px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background-color: #555;
+            transition: .3s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #ff4444;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(28px);
+        }
+
+        #status {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        a {
+            display: block;
+            margin-top: 18px;
+            padding: 12px;
+            background: #2b7cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>YouTube In-Video Logo Remover</h2>
+    <div class="switch-container">
+
+        <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+        </label>
+
+    </div>
+    <p>
+        Automatically removes channel logos displayed on YouTube videos.
+        <br><br>
+	For coffee 🙏
+    </p>
+
+    <a href="https://dalink.to/aehe2"
+       target="_blank">
+       ❤️ Donate
+    </a>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>
